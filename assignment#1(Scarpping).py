@@ -13,3 +13,4 @@ com = [ele for ele in com if ele not in unwanted_string]
 with open('final.txt', 'w') as filehandle:
     for listitem in com:
         filehandle.write('%s\n' % html.unescape(listitem))
+        # this is modified
